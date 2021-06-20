@@ -1,7 +1,7 @@
 # vue3-ssr-koa-route-api
 
-#build
+# build
 npm run build
 
-#run server
+# run server
 node server
