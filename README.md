@@ -8,4 +8,4 @@ node server
 
 # test
 in terminal 
-  curl http://localhost:8080/test
+  curl http://localhost:8080/list
