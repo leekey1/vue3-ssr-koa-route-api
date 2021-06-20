@@ -13,4 +13,6 @@ npm run build
 node server
 
 # test in terminal 
+  curl  http://localhost:8080/
+  
   curl  http://localhost:8080/list
