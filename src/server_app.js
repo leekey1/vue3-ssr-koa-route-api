@@ -1,4 +1,4 @@
-import {createApp} from 'vue'
+import {createSSRApp} from 'vue'
 import App from './app.vue'
 
 import {createMemoryHistory, createRouter} from "vue-router";
@@ -14,7 +14,7 @@ function createRouterS () {
 
 function createAppS () {
     const router = createRouterS()
-    const app = createApp(App)
+    const app = createSSRApp(App)
     app.use(router)
     return { app, router }
 }
