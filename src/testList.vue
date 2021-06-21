@@ -22,7 +22,10 @@
             if(this.isSSR)await this.fnsearch()
         },
         async created() {
-            if(!this.isSSR)await this.fnsearch()
+            if(!this.isSSR){
+                if(window.__SSR_COMP_STATE__)  window.__SSR_COMP_STATE__ = false
+                else await this.fnsearch(1)
+            }
         },
         methods: {
             async fnsearch() {
